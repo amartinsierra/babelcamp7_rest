@@ -25,7 +25,8 @@ public class PaisesController {
 		return service.paisesContinente(continente);
 	}
 	@GetMapping(value="poblacion/{continente}",produces=MediaType.TEXT_PLAIN_VALUE)
-	public String poblacionPais(@PathVariable("continente") String continente){
+	public String poblacionContinente(@PathVariable("continente") String continente){
 		return String.valueOf(service.poblacionContinente(continente));
+		
 	}
 }
