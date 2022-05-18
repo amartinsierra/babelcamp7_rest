@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active:
+    - native
+  cloud:
+    config:
+      server:
+        #git:
+        #  uri: https://github.com/amartinsierra/servicios_config
+        native:
+          search-locations:
+          - file:///c:\temp\config
